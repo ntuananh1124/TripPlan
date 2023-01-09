@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripPlan</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="https://kit.fontawesome.com/f9bb03fe94.js" crossorigin="anonymous"></script>
+    <link rel = "icon" href = "./images/icon.png" type = "image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap'); 
+    </style>
+</head>
+<body>
+    <nav class="topnav">
+        <a href="#">
+            <img src="./images/tripplan.png" width="170" height="50" class="tripplan"/>
+        </a>
+        <ul>
+            <li>
+                <a class="active" href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#">Popular</a>
+            </li>
+            <li>
+                <a href="#">Nation<i class="fa-sharp fa-solid fa-angle-down" id="active-1"></i> </a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li>
+                            <a class="column-1">Asia<i class="fa-sharp fa-solid fa-angle-right"></i></a>
+                            <div class="mini-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="./images/vietnamflag.png" width="16" height="16"/>Vietnam</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/thailandflag.png" width="16" height="16"/>Thailand</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/japanflag.png" width="16" height="16"/>Japan</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="column-2">Europe<i class="fa-sharp fa-solid fa-angle-right"></i></a>
+                            <div class="mini-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="./images/franceflag.png" width="16" height="16"/>France</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/ukflag.png" width="16" height="16"/>UK</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="column-3">Africa<i class="fa-sharp fa-solid fa-angle-right"></i></a>
+                            <div class="mini-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="./images/egyptflag.png" width="16" height="16"/>Egypt</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/moroccoflag.png" width="16" height="16"/>Morocco</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="column-4">America<i class="fa-sharp fa-solid fa-angle-right"></i></a>
+                            <div class="mini-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="./images/usaflag.png" width="16" height="16"/>USA</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/brazilflag.png" width="16" height="16"/>Brazil</a>
+                                    </li>
+                                    <li>                                      
+                                        <a href="#"><img src="./images/canadaflag.png" width="16" height="16"/>Canada</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="column-5">Oceania<i class="fa-sharp fa-solid fa-angle-right"></i></a>
+                            <div class="mini-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="./images/australiaflag.png"/>Australia</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/newzealandflag.png" width="16" height="16"/>New Zealand</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>               
+            </li>
+            <li>
+                <a href="#">Guide</a>
+            </li>
+            <li>
+                <a href="#">Tour</a>
+            </li>
+            <li>
+                <a href="#">Contact Us<i class="fa-sharp fa-solid fa-angle-down"></i> </a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                        <li><a href="https://www.Instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li><a href="https://www.gmail.com/" target="_blank" rel="noopener noreferrer"><i class="fa-sharp fa-solid fa-envelope"></i>Email</a></li>                                             
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <input class="search" type="text" placeholder="Type here to search..."/>
+    </nav>
+    <div class="popular-tours">
+        <h2>Popular Tours</h2>
+        <div class="grid-container">
+            <div class="tours">
+                <div class="image-price">
+                    <a href="https://www.tripadvisor.com/AttractionProductReview-g293916-d11449481-Thailand_s_Ayutthaya_Temples_and_River_Cruise_from_Bangkok-Bangkok.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <img src="./images/img1.jpg" alt="Loading Image" class="tour-image"/> </a>
+                    <span class="tour-price">From $40</span>
+                </div>
+                <div class="tour-description">
+                    <a href="https://www.tripadvisor.com/AttractionProductReview-g293916-d11449481-Thailand_s_Ayutthaya_Temples_and_River_Cruise_from_Bangkok-Bangkok.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <h3 class="tour-name">Thailands Ayutthaya Temples Cruise from Bangkok</h3> </a>
+                        <div class="tour-star-rating">
+                            <img src="./images/Shape.png" alt=" tour-star"/> 
+                            <span>4.8 (12 review)</span> 
+                            <span class="duration">Duration: 9 hours</span>
+                        </div>
+                        <a href="https://28tech.com.vn/lap-trinh-front-end.html" target="_blank" rel="noopener noreferrer" class="tour-button"> <button type="button" class="button">Tours Price $61</button> </a>
+                </div>
+            </div>
+            <div class="tours">
+                <div class="image-price">
+                    <a href="https://www.klook.com/activity/3020-floating-markets-day-tour-bangkok/?gclid=Cj0KCQiA-oqdBhDfARIsAO0TrGET1StoWlLBILU3SuhUIskkjmDbY67xMTcd3CYWchXYPoiACcnLY4waAuufEALw_wcB&gclsrc=aw.ds" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <img src="./images/img2.jpg" alt="Loading Image" class="tour-image"/> </a>
+                    <span class="tour-price">From $70</span>                 
+                </div>
+                <div class="tour-description">
+                    <a href="https://www.klook.com/activity/3020-floating-markets-day-tour-bangkok/?gclid=Cj0KCQiA-oqdBhDfARIsAO0TrGET1StoWlLBILU3SuhUIskkjmDbY67xMTcd3CYWchXYPoiACcnLY4waAuufEALw_wcB&gclsrc=aw.ds" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <h3 class="tour-name">Floating Markets Day Trip from Bangkok</h3> </a>
+                        <div class="tour-star-rating">
+                            <img src="./images/Shape.png" alt=" tour-star"/> 
+                            <span>4.8 (12 review)</span> 
+                            <span class="duration">Duration: 9 hours</span>
+                        </div>
+                    <a href="https://28tech.com.vn/lap-trinh-front-end.html" target="_blank" rel="noopener noreferrer" class="tour-button"> <button type="button" class="button">Tours Price $61</button> </a>
+                </div>
+            </div>
+            <div class="tours">
+                <div class="image-price">
+                    <a href="https://www.tripadvisor.com/Attraction_Products-g293916-t11965-zfg11865-a_contentId.42940329071+761518932-Bangkok.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <img src="./images/img3.jpg" alt="Loading Image" class="tour-image"/> </a>
+                    <span class="tour-price">From $60</span>                   
+                </div>
+                <div class="tour-description">
+                    <a href="https://www.tripadvisor.com/Attraction_Products-g293916-t11965-zfg11865-a_contentId.42940329071+761518932-Bangkok.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <h3 class="tour-name">Bangkok Dinner Cruise on the Chao Phraya River</h3> </a>
+                        <div class="tour-star-rating">
+                            <img src="./images/Shape.png" alt=" tour-star"/> 
+                            <span>4.6 (12 review)</span> 
+                            <span class="duration">Duration: 9 hours</span>
+                        </div>
+                    <a href="https://28tech.com.vn/lap-trinh-front-end.html" target="_blank" rel="noopener noreferrer" class="tour-button"> <button type="button" class="button">Tours Price $61</button> </a>
+                </div>
+            </div>
+            <div class="tours">
+                <div class="image-price">
+                    <a href="https://www.tripadvisor.com/AttractionProductReview-g303506-d11461330-Private_City_Tour_of_Rio_de_Janeiro-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <img src="./images/img4.jpg" alt="Loading Image" class="tour-image"/> </a>
+                    <span class="tour-price">From $60</span>                   
+                </div>
+                <div class="tour-description">
+                    <a href="https://www.tripadvisor.com/AttractionProductReview-g303506-d11461330-Private_City_Tour_of_Rio_de_Janeiro-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <h3 class="tour-name">Private City Tour of Rio de Janeiro</h3> </a>
+                        <div class="tour-star-rating">
+                            <img src="./images/Shape.png" alt=" tour-star"/> 
+                            <span>4.7 (12 review)</span> 
+                            <span class="duration">Duration: 6 hours</span>
+                        </div>
+                    <a href="https://28tech.com.vn/lap-trinh-front-end.html" target="_blank" rel="noopener noreferrer" class="tour-button"> <button type="button" class="button">Tours Price $61</button> </a>
+                </div>
+            </div>
+            <div class="tours">
+                <div class="image-price">
+                    <a href="https://www.manutd.com/en/visit-old-trafford" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <img src="./images/img5.jpg" alt="Loading Image" class="tour-image"/> </a>
+                    <span class="tour-price">From $50</span>                   
+                </div>
+                <div class="tour-description">
+                    <a href="https://www.manutd.com/en/visit-old-trafford" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <h3 class="tour-name">Old Trafford Manchester Tour</h3> </a>
+                        <div class="tour-star-rating">
+                            <img src="./images/Shape.png" alt=" tour-star"/> 
+                            <span>4.9 (147 review)</span> 
+                            <span class="duration">Duration: 3 hours</span>
+                        </div>
+                    <a href="https://28tech.com.vn/lap-trinh-front-end.html" target="_blank" rel="noopener noreferrer" class="tour-button"> <button type="button" class="button">Tours Price $61</button> </a>
+                </div>
+            </div>
+            <div class="tours">
+                <div class="image-price">
+                    <a href="https://www.japan-guide.com/e/e2164.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <img src="./images/img6.webp" alt="Loading Image" class="tour-image"/> </a>
+                    <span class="tour-price">From $70</span>                 
+                </div>
+                <div class="tour-description">
+                    <a href="https://www.japan-guide.com/e/e2164.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <h3 class="tour-name">Tokyo Trip</h3> </a>
+                    <div class="tour-rating">
+                        <div class="tour-star-rating">
+                            <img src="./images/Shape.png" alt=" tour-star"/> 
+                            <span>4.5 (10 review)</span> 
+                            <span class="duration">Duration: 9 hours</span>
+                        </div>
+                    </div>
+                    <a href="https://28tech.com.vn/lap-trinh-front-end.html" target="_blank" rel="noopener noreferrer" class="tour-button"> <button type="button" class="button">Tours Price $61</button> </a>
+                </div>
+            </div>
+            <div class="tours">
+                <div class="image-price">
+                    <a href="https://www.tripadvisor.com.sg/Tourism-g293924-Hanoi-Vacations.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <img src="./images/img7.jpg" alt="Loading Image" class="tour-image"/> </a>
+                    <span class="tour-price">From $70</span>                 
+                </div>
+                <div class="tour-description">
+                    <a href="https://www.tripadvisor.com.sg/Tourism-g293924-Hanoi-Vacations.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <h3 class="tour-name">Highlights of Hanoi Full-Day City Tour with Lunch</h3> </a>
+                        <div class="tour-star-rating">
+                            <img src="./images/Shape.png" alt=" tour-star"/> 
+                            <span>4.9 (9 review)</span> 
+                            <span class="duration">Duration: 24 hours</span>
+                        </div>
+                    <a href="https://28tech.com.vn/lap-trinh-front-end.html" target="_blank" rel="noopener noreferrer" class="tour-button"> <button type="button" class="button">Tours Price $61</button> </a>
+                </div>
+            </div>
+            <div class="tours">
+                <div class="image-price">
+                    <a href="https://www.visitdubai.com/en/plan-your-trip" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <img src="https://cdn3.ivivu.com/2022/06/du-lich-dubai-ivivu.jpg" alt="Loading Image" class="tour-image"/> </a>
+                    <span class="tour-price">From $600</span>                 
+                </div>
+                <div class="tour-description">
+                    <a href="https://www.visitdubai.com/en/plan-your-trip" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <h3 class="tour-name">Dubai Tour</h3> </a>
+                        <div class="tour-star-rating">
+                            <img src="./images/Shape.png" alt=" tour-star"/> 
+                            <span>4.8 (12 review)</span> 
+                            <span class="duration">Duration: 9 hours</span>
+                        </div>
+                    <a href="https://28tech.com.vn/lap-trinh-front-end.html" target="_blank" rel="noopener noreferrer" class="tour-button"> <button type="button" class="button">Tours Price $61</button> </a>
+                </div>
+            </div>
+            <div class="tours">
+                <div class="image-price">
+                    <a href="https://private-drivers-france.com/contact/?gclid=Cj0KCQiAwJWdBhCYARIsAJc4idCFcUj5Yx3_Z58DH4m7KVxzH6aRJnD0oAREZGeTJbUDF13dM9wovQ8aAnnIEALw_wcB" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <img src="./images/img8.jpg" alt="Loading Image" class="tour-image"/> </a>
+                    <span class="tour-price">From $100</span>                 
+                </div>
+                <div class="tour-description">
+                    <a href="https://private-drivers-france.com/contact/?gclid=Cj0KCQiAwJWdBhCYARIsAJc4idCFcUj5Yx3_Z58DH4m7KVxzH6aRJnD0oAREZGeTJbUDF13dM9wovQ8aAnnIEALw_wcB" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"> <h3 class="tour-name">Private Paris Tour</h3> </a>
+                        <div class="tour-star-rating">
+                            <img src="./images/Shape.png" alt=" tour-star"/> 
+                            <span>4.9 (20 review)</span> 
+                            <span class="duration">Duration: 8 hours</span>
+                        </div>
+                    <a href="https://28tech.com.vn/lap-trinh-front-end.html" target="_blank" rel="noopener noreferrer" class="tour-button"> <button type="button" class="button">Tours Price $1000</button> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-image">
+            <img src="/images/qatar airways copy.png" width="80" height="30"/>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emirates_logo.svg/850px-Emirates_logo.svg.png" width="30" height="30" class="emirates"/>
+            <img src="./images/bamboo.png" width="110" height="30" class="bamboo"/>
+            <img src="./images/1280px-British_Airways_Logo.svg.png" width="180" height="30" class="bristish"/>
+            <img src="./images/vietnam.png" width="190" height="30" class="vietnam"/>
+        </div>      
+        <div class="information">
+            <ul>
+                <li>Hotline</li>
+                <li>Terms of use</li>
+                <li>Privacy Policy</li>
+                <li class="copyrights"><i class="fa-solid fa-copyright"></i>Copyrights by TripPlan</li>
+            </ul>  
+        </div>
+    </div>
+</body>
+</html>
